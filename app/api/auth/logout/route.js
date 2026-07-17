@@ -1,0 +1,1 @@
+import {NextResponse} from 'next/server'; export async function POST(){const r=NextResponse.json({message:'Çıkış yapıldı.'}); r.cookies.set('auth_token','',{httpOnly:true,path:'/',maxAge:0}); return r;}
