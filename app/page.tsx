@@ -73,8 +73,8 @@ export default function Home() {
               <Link href="/modifiye" className="inline-flex items-center justify-center gap-2 rounded-2xl bg-sky-500 px-6 py-3 text-sm font-bold text-white shadow-2xl shadow-sky-500/20 transition hover:bg-sky-400">
                 Modifiye Stüdyosuna Git <ArrowRight size={17} />
               </Link>
-              <Link href="/incelemeler" className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/[0.04] px-6 py-3 text-sm font-bold text-white transition hover:bg-white/[0.08]">
-                İncelemeleri Keşfet
+              <Link href="/araclar" className="inline-flex items-center justify-center rounded-2xl border border-white/15 bg-white/[0.04] px-6 py-3 text-sm font-bold text-white transition hover:bg-white/[0.08]">
+                Araçları Keşfet
               </Link>
             </div>
             <HeroCarPhotoCarousel />
@@ -127,11 +127,7 @@ export default function Home() {
             <p className="text-sm font-bold uppercase tracking-[0.24em] text-sky-300">Ana Bölümler</p>
             <h2 className="mt-3 text-3xl font-black tracking-[-0.03em] md:text-4xl">Sade, anlaşılır ve etkileyici yapı</h2>
           </div>
-          <p className="max-w-xl text-sm leading-7 text-slate-400">
-            Fazla tekrar eden alanlar kaldırıldı. Ana sayfa artık kullanıcıyı doğrudan en önemli bölümlere yönlendiren temiz bir yapıya sahip.
-          </p>
         </div>
-
         <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {coreSections.map((section) => {
             const Icon = section.icon
@@ -181,7 +177,7 @@ export default function Home() {
                   <h3 className="mt-2 text-xl font-black">{car.model}</h3>
                   <p className="mt-2 text-sm leading-6 text-slate-400">{car.text}</p>
                 </div>
-                <Link href="/incelemeler" className="shrink-0 rounded-xl bg-white/[0.06] px-4 py-2 text-sm font-bold text-white transition hover:bg-sky-500">
+                <Link href="/araclar" className="shrink-0 rounded-xl bg-white/[0.06] px-4 py-2 text-sm font-bold text-white transition hover:bg-sky-500">
                   İncele
                 </Link>
               </div>
